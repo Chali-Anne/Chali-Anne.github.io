@@ -52,7 +52,7 @@ body {
   box-sizing: border-box;
   color:#373737;
   /**background-color: #212121;*/
-  background-image : url('../images/bgspace.png');
+  /*background : url('../images/bgspace.png') #0090ff no-repeat;*/
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -294,6 +294,8 @@ Full-Width Styles
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
+  background: url('../images/bgspace.png') no-repeat center;
+  background-size:100% 100%;
 }
 
 #header_wrap .inner {
