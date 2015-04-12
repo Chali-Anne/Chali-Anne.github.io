@@ -22,7 +22,7 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <section id="main_content" class="inner" style="margin-top: 150px;">
         <h1>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mécaniques du jeu</h1>
 
@@ -40,26 +40,126 @@ $ git checkout gh-pages
 
 <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 -->
+
+<p>Le jeu Poly-Showakusei est fortement inspiré du jeu <em>Asteroids</em>. Le <strong><font color="orange">but</font></strong> du jeu est de défendre un nombre minimal de stations spatiales contre les astéroïdes qui se baladent. Chaque partie peut durer de 30 secondes à 5 minutes. La partie se termine seulement lorsque le temps est écoulé.</p>
+<br>
+<p>Voici les objets de base qui se retrouvent sur la zone de jeu : </p>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" align="middle" src="images/game_objects/skinDefault.png">
+		<center id="image_tag">Vaisseau spatial par défaut</center>
+	</div>
+	<div class="right column">
+        <p>Le vaisseau est contrôlé par le joueur. Il est possible d'avancer, de tourner vers la gauche ou vers la droite et de tirer de petits projectiles.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" src="images/game_objects/barrier.png" align="center">
+		<center id="image_tag">Barrière</center>
+	</div>
+	<div class="right column">
+        <p>La barrière empêche le vaisseau et les astéroïdes de passer. Elle ne fait rien de spécial.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" src="images/game_objects/bonus_transparent_petit.png" align="center">
+		<center id="image_tag">Bonus accélérateur</center>
+	</div>
+	<div class="right column">
+        <p>Le bonus accélérateur permet d'aller plus <strong><font color="orange">vite</font></strong> pendant une courte période de temps. Le bonus est activé lorsque le vaisseau passe dessus. Il est ensuite inactif pendant 5 secondes.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" src="images/game_objects/devil.png" align="center">
+		<center id="image_tag">Malus d'inversion de touches</center>
+	</div>
+	<div class="right column">
+        <p>Le malus d'inversion de touches inverse certains contrôles du vaisseau, soit <strong><font color="orange">avancer</font></strong>, aller vers la <strong><font color="orange">gauche</font></strong> et aller vers la <strong><font color="orange">droite</font></strong>. L'inversion dure quelques secondes et est activée lorsque le vaisseau passe dessus. Il est ensuite inactif pendant 5 secondes.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" src="images/game_objects/portail_transparent.png" align="center">
+		<center id="image_tag">Portail</center>
+	</div>
+	<div class="right column">
+        <p>Les portails permettent au vaisseau et aux astéroïdes de passer d'un point à l'autre de la zone de jeu très rapidement.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" src="images/game_objects/station_transparent_petit.png" align="center">
+		<center id="image_tag">Station spatiale</center>
+	</div>
+	<div class="right column">
+        <p>La station spatiale se retrouve dans le mode <strong><font color="orange">Partie rapide</font></strong> et dans le mode <strong><font color="orange">Campagne</font></strong>. Il s'agit des structures à défendre pour pouvoir gagner la partie. Une station spatiale a de 1 à 100 points de vie. La station est détruite lorsque son nombre de points de vie tombe à 0.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
+<div id="columns">
+    <div class="left column">
+        <img id="image_png" src="images/game_objects/tripleShot.png" align="center">
+		<center id="image_tag">Bonus de tir multiple</center>
+	</div>
+	<div class="right column">
+        <p>Le bonus de tir multiple permet de tirer 3 projectiles à la fois pendant quelques secondes. Les tirs supplémentaires se font de par et d'autre du vaisseau, à angle égal. Le bonus est activé lorsque le vaisseau passe dessus. Il est ensuite inactif pendant 5 secondes.</p>
+    </div>
+</div>
+<div class="stopFloat"></div>
 <h2>
 <a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Partie rapide</h2>
-<p>Le jeu Poly-Showakusei est fortement inspiré du jeu <em>Asteroids</em>. Le <strong><font color="orange">but</font></strong> du jeu est de défendre un nombre minimal de stations spatiales contre les astéroïdes qui se baladent. Chaque partie peut durer de 30 secondes à 5 minutes. La partie se termine seulement lorsque le temps est écoulé.</p>
+<p>La partie rapide peut être jouée seul ou à 2 joueurs. Le second joueur peut être un humain, à condition que les deux utilisateurs soient <strong><font color="orange">connectés</font></strong>, ou qu'ils jouent sur le <strong><font color="orange">même ordinateur</font></strong>, et qu'ils aient choisi la même <strong><font color="orange">zone de jeu</font></strong>.</p>
+<br>
+<p><strong>Condition de victoire</strong></p>
+<ul>
+	<li>Protéger un certain nombre de stations spatiales</li>
+</ul>
 <h2>
 <a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mode campagne</h2>
+<p>La campagne peut être jouée seul ou à 2 joueurs. Le second joueur peut être un humain, à condition que les deux utilisateurs soient <strong><font color="orange">connectés</font></strong>, ou qu'ils jouent sur le <strong><font color="orange">même ordinateur</font></strong> et qu'ils aient choisi la même <strong><font color="orange">configuration de campagne</font></strong>. Une configuration de campagne correspond à la liste de zones de jeu que comprend la campagne.</p>
+<br>
+<p><strong>Conditions de victoire</strong></p>
+<ul>
+	<li>Protéger un certain nombre de stations spatiales à chaque zone de jeu</li>
+	<li>Gagner toutes les parties de la campagne</li>
+</ul>
 <h2>
 <a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mode «Break the targets»</h2>
-<h1>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mécaniques de l'éditeur</h1>
+<p>Le mode <strong><font color="orange">Break the targets</font></strong> peut être joué uniquement lorsque <strong><font color="orange">2 joueurs humains</font></strong> sont connectés et souhaitent jouer sur la même <strong><font color="orange">zone de jeu</font></strong> dans ce mode. Le second joueur peut être un humain, à condition que les deux utilisateurs soient <strong><font color="orange">connectés</font></strong> et qu'ils aient choisi la même <strong><font color="orange">zone de jeu</font></strong>.</p>
+<img src="images/game_objects/target_petit.png" style="margin:auto;display:block;background-color:black;">
+<p>Un <strong><font color="orange">nouvel objet</font></strong> remplace la station spatiale dans ce mode : la <strong><font color="orange">cible</font></strong>. Le <strong><font color="orange">but</font></strong> est de détruire toutes les cibles présentes sur la zone de jeu avant que le temps ne soit écoulé. Une partie dure entre 30 secondes et 5 minutes.</p>
+<p><strong>Condition de victoire</strong></p>
+<ul>
+	<li>Briser toutes les cibles de la zone de jeu</li>
+</ul>
 <!--
 <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 -->
 <h1>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Auteurs et contributeurs</h1>
+<div id="scroll">
+    <ul>
+    <li><img src="images/authors/bbm.png"><span>Benjamin</span></li>
+    <li><img src="images/authors/mfm.png"><span>Marie-France</span></li>
+	<li><img src="images/authors/ts.png"><span>Tommy</span></li>
+	<li><img src="images/authors/cal.png"><span>Chali-Anne</span></li>
+	<li><img src="images/authors/ja.png"><span>Julien</span></li>
+	<li><img src="images/authors/aso.png"><span>Alexandre</span></li>
+    </ul>
+</div>
 <!--
 <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 -->
-<h3>
+<!--<h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contactez-nous</h3>
-<!--
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
 -->
 	  </section>

@@ -26,7 +26,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -49,14 +48,14 @@ Theme Styles
 *******************************************************************************/
 
 body {
-  box-sizing: border-box;
-  color:rgba(255,255,204,1);
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background: url('../images/skybox.jpg') #212121 no-repeat center;
-  background-size:100% 100%;
+	box-sizing: border-box;
+	color:rgba(255,255,204,1);
+	font-size: 16px;
+	font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	background: url('../images/skybox.jpg') #212121;
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +95,7 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+  text-align:justify;
 }
 
 footer p {
@@ -154,7 +154,7 @@ p img {
   margin: 0;
   padding: 0;
   vertical-align: middle;
-  text-align: center;
+  text-align: justify;
   border: none;
 }
 
@@ -288,7 +288,7 @@ Full-Width Styles
 }
 
 #header_wrap {
-  height:285px;
+  height:180px;
   background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
@@ -296,7 +296,10 @@ Full-Width Styles
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
   background: url('../images/bgspace.png') no-repeat center;
-  background-size:100% 100%;
+  background-size:48% 100%;
+  position: fixed;
+  top:0;
+  z-index: 100;
 }
 
 #header_wrap .inner {
@@ -372,8 +375,92 @@ Full-Width Styles
   background: #212121;
 }
 
+#columns {
+	width:100%;
+}
 
+.column {
+	display: inline-block;
+    vertical-align: middle;
+	margin-left: auto;
+    margin-right: auto;
+    float: none;
+	position:relative;
+	margin-bottom:5px;
+}
 
+#columns .left {
+	width:30%;
+	float:left;
+}
+
+#columns .right {
+	width:70%;
+	text-align:justify;
+	float:right;
+}
+
+#columns .portrait {
+	width:40%;
+}
+
+#columns .desc {
+	width:60%;
+	text-align:justify;
+}
+
+.stopFloat{
+width:100%;
+height:1px;
+background:none;
+clear:both;
+margin:0;
+padding:0;
+}
+
+#image_tag{
+	text-align:center;
+	color:rgba(255,0,255,1);
+}
+
+#image_png{
+	display:block;
+    margin:10% inherit auto;
+	max-width:60px;
+	max-height:60px;
+	size:cover;
+	background-color:black;
+}
+
+#scroll {
+width:100%;
+margin:0px auto;
+background:black;
+overflow-y:hidden;
+border:1px solid white;
+}
+#scroll ul {
+    margin:0; 
+    padding:0;
+    display:table;
+    list-style:none;
+}
+#scroll li {
+    text-align:center;
+    display:table-cell;
+    vertical-align:text-top;
+}
+#scroll img {
+max-height:100px;
+display:block;
+margin:0px auto;
+size:cover;
+}
+
+#scroll span {
+padding:10px 0 0;
+display:block;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
